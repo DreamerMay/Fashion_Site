@@ -1,2 +1,25 @@
-<h1>Styles#new</h1>
-<p>Find me in app/views/styles/new.html.erb</p>
+<h1>Fahsion Style</h1>
+
+  <% @style.each do |f| %>
+    <%= f %>
+
+  <% end %>
+
+
+  <ul>
+    <li><%= @style[0].upcase %>  FASHION</li>
+    <li><%= @style[1].upcase %>  FASHION</li>
+    <li><%= @style[2].upcase %>  FASHION</li>
+    <li><%= @style[3].upcase %>  FASHION</li>
+  </ul>
+
+  <%= "Casual Fashion" %>  <br>
+  <%= "Sexy Fashion" %> <br>
+  <%= "Sophisticated Fashion" %> <br>
+  <%= "Vintage Fashion" %> <br>
+
+  <div class = "fashion_type">
+    <h2><%= @style[3].upcase %> Fashion </h2> <br>
+    <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/vintage-fashion-style-3.jpg" alt="vintage style">
+
+  </div>

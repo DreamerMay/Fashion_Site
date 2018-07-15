@@ -9,6 +9,18 @@
   <%= label_tag :password %>
   <%= password_field_tag :password %>
 
-  <%= submit_tage "Log In" %>
+  <%= submit_tag "Log In" %>
+
+</br>
+
+<h2>New Member?</h2>
+
+<p>Create your account with just 3 simple inputs </p>
+
+<div class = "controls">
+  <%= button_to 'Create New Account', new_user_path, :method => 'get'%>
+  <%= link_to 'Create New Account', new_user_path %>
+
+</div>
 
 <% end %>

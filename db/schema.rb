@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_14_043716) do
+ActiveRecord::Schema.define(version: 2018_07_14_132158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "attires", force: :cascade do |t|
     t.text "name"
-    t.integer "category_type"
-    t.integer "fashion_type"
+    t.integer "attire_type"
+    t.integer "style_type"
     t.text "detail"
     t.text "image"
     t.integer "style_id"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_07_14_043716) do
   end
 
   create_table "styles", force: :cascade do |t|
-    t.integer "fashion_type"
+    t.integer "style_type"
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2018_07_14_043716) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.boolean "admin", default: false
   end
 
 end

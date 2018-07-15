@@ -1,6 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Fashion Collections</h1>
+
 
 <% if @current_user.present? %>
-  <h1>Welcome back <%= @current_user.name %></h1>
+  <h2>Welcome back <%= @current_user.name %></h2>
+  <%= image_tag @current_user.image, :alt => @current_user.name, :class => 'feature' if @current_user.image.present?%>
+
 <% end %>

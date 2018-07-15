@@ -41,8 +41,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-gem "pry-rails"
-gem "better_errors"
+gem 'pry-rails'
+
 gem 'bcrypt', '~> 3.1.7'
 
 group :development do
