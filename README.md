@@ -23,5 +23,6 @@ Things you may want to cover:
 
 * ...
 
-Database
-atire data: https://www.theiconic.com.au/reminisce-ls-mini-dress-600143.html
+Items need to fix:
+1) current user not show in home page.
+2) Create new account button from log in page link back to login page
