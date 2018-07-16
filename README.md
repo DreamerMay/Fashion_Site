@@ -24,8 +24,9 @@ Things you may want to cover:
 * ...
 
 Items need to fix:
-1) current user not show in home page.
+1) Stripe javascript => payment
 2) Create new account button from log in page link back to login page
+
 
 define photos for Fahsion Style imgage
 s1 = Style.create :style_type => 'vintage', :image => 'https://blog.stylewe.com/wp-content/uploads/2016/11/vintage-fashion-style-3.jpg'

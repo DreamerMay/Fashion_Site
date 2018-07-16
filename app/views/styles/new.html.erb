@@ -4,14 +4,15 @@
     <%= f %>
 
   <% end %>
+<p></p>
+<br>
 
+  <%= link_to @style[0].upcase, styles_by_type_path(@style[0]) %> FASHION<br>
+  <%= link_to @style[1].upcase, styles_by_type_path(@style[1]) %> FASHION<br>
+  <%= link_to @style[2].upcase, styles_by_type_path(@style[2]) %> FASHION<br>
+  <%= link_to @style[3].upcase, styles_by_type_path(@style[3]) %> FASHION<br>
 
-  <ul>
-    <li><%= @style[0].upcase %>  FASHION</li>
-    <li><%= @style[1].upcase %>  FASHION</li>
-    <li><%= @style[2].upcase %>  FASHION</li>
-    <li><%= @style[3].upcase %>  FASHION</li>
-  </ul>
+<p></p>
 
   <%= "Casual Fashion" %>  <br>
   <%= "Sexy Fashion" %> <br>

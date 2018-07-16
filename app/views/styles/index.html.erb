@@ -1,6 +1,0 @@
-<h1><%=  %></h1>
-
-<% @style.each do |style| %>
-  <%= image_tag style.image, :alt => style.style_type, :class => 'thumb' if style.image.present? %>
-
-<% end %>
