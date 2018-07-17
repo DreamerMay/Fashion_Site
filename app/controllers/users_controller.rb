@@ -18,6 +18,12 @@ class UsersController < ApplicationController
     else
       render :new
   end
+
+  def fav_style
+  end 
+
+
+
 end
 
   private

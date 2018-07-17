@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  get 'list/new'
   root :to => 'pages#home'
   resources :users, :only => [:new, :create, :index]
   resources :styles, :only => [:new, :by_type, :show]
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
+  get '/users/fav_style' => 'users#fav_style', as: :fav_style
+  get '/users/fav_attire' => 'users#fav_attire', as: :fav_attire
 
   get '/styles/new' => 'styles#new'
   get '/styles/by_type/:style' => 'styles#by_type', as: :styles_by_type

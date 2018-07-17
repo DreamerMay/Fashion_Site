@@ -14,7 +14,8 @@
       </head>
 
   <body>
-    <nav>
+    <div class ="container">
+    <nav class ="navbar navbar-dark bg-dark">
       <%= link_to 'Home', root_path %>
         <% if @current_user.present? %>
           <%= link_to 'Email Address', users_path if @current_user.admin? %>
@@ -28,8 +29,12 @@
         <%= link_to 'Fashion Style', styles_new_path %>
         <%= link_to 'Attire Type', attires_new_path %>
 
+        <%= link_to 'My Fashion', fav_style_path  %>
+        <%= link_to 'My List', fav_attire_path %>
+
     </nav>
 
     <%= yield %>
+    </div>
   </body>
 </html>

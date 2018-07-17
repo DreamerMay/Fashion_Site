@@ -43,12 +43,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-gem 'bootstrap-sass', '~> 3.3.7'
+
 gem 'bootstrap', '~> 4.1.1'
 gem 'pry-rails'
+gem 'rails_12factor', group: :production
 
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'cloudinary'
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
