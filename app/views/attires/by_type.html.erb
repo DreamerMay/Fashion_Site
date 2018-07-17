@@ -1,0 +1,13 @@
+<h1><%= params[:attire].capitalize %></h1>
+
+<%# @attire.each do |attire| %>
+<%# image_tag attire.image, :alt => attire.attire_type, :class => 'thumb' if attire.image.present? %>
+
+<% @attire.each do |attire| %>
+<%= link_to image_tag(attire.image, :class => 'thumb'), attire_path(attire)  %>
+
+<%= attire.name %>
+
+<% end %>
+
+<br>

@@ -1,0 +1,19 @@
+<h1><%= @style.name.capitalize  %></h1>
+
+<%= image_tag @style.image, :alt => @style.name, :class => 'feture' if @style.image.present?%>
+
+<ul>
+  <li><%= @style.name %></li>
+  <li><%= @style.style_type %></li>
+</ul>
+
+<hr>
+
+<% @style.attires.each do |attire| %>
+  <%= link_to image_tag(attire.image, :class =>'thumb'), attire %>
+  <%= attire.name %>
+<% end %>
+
+<hr>
+
+<%= image_tag @styles.sample.image %>

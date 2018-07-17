@@ -13,7 +13,7 @@
 #
 
 class Attire < ApplicationRecord
-  belongs_to :styles, :optional => true
+  belongs_to :style, :optional => true
   has_and_belongs_to_many :users
   enum attire_type: [:accessories, :bottom, :dress, :hat, :shoe, :top]
 end

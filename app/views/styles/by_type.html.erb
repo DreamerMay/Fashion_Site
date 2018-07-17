@@ -1,5 +1,7 @@
 <h1> <%= params[:style].capitalize %> Fashion Style </h1>
 
 <% @style.each do |style| %>
-<%= image_tag style.image, :alt => style.style_type, :class=> 'thumb' if style.image.present? %>
+<%# image_tag style.image, :alt => style.style_type, :class => 'thumb' if style.image.present? %>
+<%= style.name %>
+<%= link_to image_tag(style.image, :class => 'thumb'), style_path(style) %>
 <% end %>

@@ -1,0 +1,11 @@
+<h1><%= @attire.name.capitalize  %></h1>
+
+
+<%= image_tag @attire.image, :alt => @attire.name, :class => 'feture' if @attire.image.present?%>
+
+<ul>
+  <li><%= @attire.name %></li>
+  <li><%= @attire.style.style_type %></li>
+  <li>Description : <%= @attire.detail %></li>
+
+</ul>

@@ -1,15 +1,15 @@
 <h1>Attire Type</h1>
 
 
-<%=   image_tag 'dress.jpg', :alt => 'dress', :class => 'thumb'  %>
+<%= link_to(image_tag("dress.jpg", :alt => "dress", :title => "Dress", :class => 'thumb'), attires_by_type_path(@attire[2])) %>
 Dress <br>
-<%=  image_tag 'top.jpg', :alt => 'top', :class => 'thumb'  %>
+<%= link_to(image_tag("top.jpg", :alt => "top", :title => "Top", :class => 'thumb'), attires_by_type_path(@attire[5])) %>
 Top <br>
-<%=  image_tag 'bottom.jpg', :alt => 'bottom', :class => 'thumb'  %>
+<%= link_to(image_tag("bottom.jpg", :alt => "Bottom", :title => "Bottom", :class => 'thumb'), attires_by_type_path(@attire[1])) %>
 Bottom <br>
-<%=  image_tag 'shoes.jpg', :alt => 'shoes', :class => 'thumb'  %>
+<%= link_to(image_tag("shoes.jpg", :alt => "Shoes", :title => "Shoes", :class => 'thumb'), attires_by_type_path(@attire[4])) %>
 Shoes <br>
-<%=  image_tag 'hat.jpg', :alt => 'hat', :class => 'thumb'  %>
-Hat <br>
-<%=  image_tag 'accessories.jpg', :alt => 'accessories', :class => 'thumb'  %>
-accessories <br>
+<%= link_to(image_tag("hat.jpg", :alt => "Hats", :title => "Hats", :class => 'thumb'), attires_by_type_path(@attire[3])) %>
+Hats <br>
+<%= link_to(image_tag("accessories.jpg", :alt => "Accessories", :title => "Accessories", :class => 'thumb'), attires_by_type_path(@attire[0])) %>
+Accessories
