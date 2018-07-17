@@ -1,6 +1,6 @@
 <h1><%= @style.name.capitalize  %></h1>
 
-<%= image_tag @style.image, :alt => @style.name, :class => 'feture' if @style.image.present?%>
+<%= image_tag @style.image, :alt => @style.name, :class => 'feature' if @style.image.present?%>
 
 <ul>
   <li><%= @style.name %></li>
@@ -15,5 +15,5 @@
 <% end %>
 
 <hr>
-
-<%= image_tag @styles.sample.image %>
+<h3>You may like</h3>
+<%= image_tag @style_clothes.sample.image, :class =>'thumb' %>

@@ -44,6 +44,7 @@ group :development, :test do
 end
 
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap', '~> 4.1.1'
 gem 'pry-rails'
 
 gem 'bcrypt', '~> 3.1.7'
