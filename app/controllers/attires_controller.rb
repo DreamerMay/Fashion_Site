@@ -8,6 +8,7 @@ class AttiresController < ApplicationController
   end
 
   def show
+
     @attire = Attire.find params[:id]
   end
 

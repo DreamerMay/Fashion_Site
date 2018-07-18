@@ -11,7 +11,6 @@ class StylesController < ApplicationController
 
   def show
     @style = Style.find params[:id]
-
     @style_clothes = Style.where(:style_type => @style.style_type)
     # binding.pry
   end

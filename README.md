@@ -25,7 +25,8 @@ Things you may want to cover:
 
 Items need to fix:
 1) Stripe javascript => payment
-2) Create new account button from log in page link back to login page
+2) new create user image not display
+3) login user history not show.
 
 
 random pic codes pending to time

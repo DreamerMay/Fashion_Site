@@ -9,3 +9,7 @@
   <li>Description : <%= @attire.detail %></li>
 
 </ul>
+
+
+    <%= link_to image_tag(@attire.style.image, :class =>'thumb'), style_path(@attire.style.id) %>
+    <%= @attire.style.name %>

@@ -2,13 +2,13 @@
 
 <% if @user.errors.any? %>
   <ol>
-    <% @user.errors.full_message.each do |msg| %>
+    <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
   </ol>
 <% end %>
 
-<%= form_for @user do |f| %>
+<%= form_for(@user, :html => { :multipart => true }) do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -23,7 +23,7 @@
   <%= f.password_field :password_confirmation %>
 <br>
   <%= f.label :image %>
-  <%= f.url_field :image %>
+  <%= f.file_field :image %>
 <br>
   <%= f.submit "Create!" %>
 
