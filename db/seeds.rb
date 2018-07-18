@@ -215,19 +215,19 @@ a16 = Attire.create(
     :detail =>'The Marina Skirt by TUSSAH is the perfect winter staple item. Cut from a Medium-weight fabrication with a featured double ruffle hemline, this skirt sits comfortably on your natural waist. Style yours with a white fitted top, black heels & coat for a chic everyday look.',
     :image => 'https://img1.theiconic.com.au/PJSj7-F1atVYfBcekFXh4mmEHM8=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Ftussah-9898-988256-2.jpg')
 
-  a28 = Attire.create(
+  a29 = Attire.create(
     :name =>'Jessica Cap',
     :attire_type => 'hat',
     :style_type => 'vintage',
     :detail =>'TThe sartorial embodiment of classics with a twist, Morgan & Taylor accessories give you classic, versatile silhouettes with just the right dose of thoughtful flourish. Known for their neutral pallets and vivid splashes of colour, all Morgan & Taylor pieces are crafted with a delicate touch, resulting in an eclectic collection of accessories for every occasion.',
     :image => 'https://img1.theiconic.com.au/zBP75lQT1dwgkI-MTwVjiTTYqho=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fmorgan-taylor-3977-851665-1.jpg')
-  a28 = Attire.create(
+  a30 = Attire.create(
     :name =>'Ellaria Fedora',
     :attire_type => 'hat',
     :style_type => 'sophisticated',
     :detail =>'Australian-based label Ace of Something draws inspiration from local and global realms to create contemporary hats and headwear with a timeless sensibility. Nestled in the heart of fashion hub Melbourne, Ace of Something designs for the modern woman who favours style and quality in equal measure.',
     :image => 'https://img1.theiconic.com.au/vuwnQxuNNbEgcMDIXTwdneHUdio=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Face-of-something-9579-834826-1.jpg')
-  a28 = Attire.create(
+  a31 = Attire.create(
     :name =>'Winter Felt Designer Hat',
     :attire_type => 'hat',
     :style_type => 'vintage',

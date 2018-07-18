@@ -1,22 +1,20 @@
 <h1>Fahsion Style</h1>
 
-  <% @style.each do |f| %>
-    <%= f %>
 
-  <% end %>
-<p></p>
 <br>
+  <div class = "fashion_type">
+  <%= link_to(image_tag("casual.jpg", :alt => "casual", :title => "Casual", :class => 'feature'), styles_by_type_path(@style[0])) %> <br>
+  Casual Style <br>
+  <%= link_to(image_tag("sophisticated.jpg", :alt => "sophisticated", :title => "Sophisticated", :class => 'feature'), styles_by_type_path(@style[2])) %> <br>
+  Sophisticated Style <br>
+  <%= link_to(image_tag("vintage.jpg", :alt => "vintage", :title => "Vintage", :class => 'feature'), styles_by_type_path(@style[3])) %> <br>
+  Vintage Style <br>
+  <%= link_to(image_tag("sexy.jpg", :alt => "sexy", :title => "Sexy", :class => 'feature'), styles_by_type_path(@style[1])) %> <br>
+  Sexy Style <br>
 
   <%= link_to @style[0].capitalize, styles_by_type_path(@style[0]) %> Fashion<br>
   <%= link_to @style[1].capitalize, styles_by_type_path(@style[1]) %> Fashion<br>
   <%= link_to @style[2].capitalize, styles_by_type_path(@style[2]) %> Fashion<br>
   <%= link_to @style[3].capitalize, styles_by_type_path(@style[3]) %> Fashion<br>
-
-<p></p>
-
-
-  <div class = "fashion_type">
-    <h2><%= @style[3].capitalize %> Fashion </h2> <br>
-    <img src="https://blog.stylewe.com/wp-content/uploads/2016/11/vintage-fashion-style-3.jpg" alt="vintage style" class="feature">
 
   </div>

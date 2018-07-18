@@ -16,4 +16,8 @@
 
 <hr>
 <h3>You may like</h3>
-<%= image_tag @style_clothes.sample.image, :class =>'thumb' %>
+<% @style_random.each do |random| %>
+  <% next if random == @style %>
+  <%= link_to image_tag(random.image, :class => 'thumb'), random %>
+  <%= random.name %>
+<% end %>
