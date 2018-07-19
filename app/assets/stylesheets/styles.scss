@@ -114,11 +114,19 @@ h2 {
 
 .thumb {
   max-height: 18em;
+}
 
+.thumb_attire {
+  max-height: 18em;
+  border: 5px solid black;
 }
 
 .feature {
   max-height: 30em;
+}
+
+img.feature {
+  border: 5px solid black;
 }
 
 .feature2 {

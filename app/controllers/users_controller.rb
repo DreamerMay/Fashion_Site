@@ -13,18 +13,14 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
 
-    # tis is where cloudinary code will go
     cloudinary = Cloudinary::Uploader.upload( params[ "user" ][ "image" ] )
     @user.image = cloudinary["url"]
 
-# binding.pry
       if @user.save
         session[:user_id] = @user.id
-
         redirect_to root_path
     else
-      # use flash[:something] to save error message of some kind
-      # display the flash message on the page below
+
       render :new
   end
 
