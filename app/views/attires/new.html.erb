@@ -1,15 +1,53 @@
-<h1>Attire Type</h1>
+<div class="title">
+  <h1>Attire Type</h1>
+</div>
 
+  <div class = "container">
+    <div class = "attire_new">
+      <div class ="row">
+        <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("dress.jpg", :alt => "dress", :title => "Dress", :class => 'thumb'), attires_by_type_path(@attire[2])) %>
+        </div>
+        <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("style_home1.png", :alt => "top", :title => "Top", :class => 'thumb'), attires_by_type_path(@attire[5])) %>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("bottom.png", :alt => "Bottom", :title => "Bottom", :class => 'thumb'), attires_by_type_path(@attire[1])) %>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("shoes.png", :alt => "Shoes", :title => "Shoes", :class => 'thumb'), attires_by_type_path(@attire[4])) %>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("hat.png", :alt => "Hats", :title => "Hats", :class => 'thumb'), attires_by_type_path(@attire[3])) %>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-2 col-xs-2">
+          <%= link_to(image_tag("accessories.png", :alt => "Accessories", :title => "Accessories", :class => 'thumb'), attires_by_type_path(@attire[0])) %>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<%= link_to(image_tag("dress.jpg", :alt => "dress", :title => "Dress", :class => 'thumb'), attires_by_type_path(@attire[2])) %>
-Dress <br>
-<%= link_to(image_tag("top.jpg", :alt => "top", :title => "Top", :class => 'thumb'), attires_by_type_path(@attire[5])) %>
-Top <br>
-<%= link_to(image_tag("bottom.jpg", :alt => "Bottom", :title => "Bottom", :class => 'thumb'), attires_by_type_path(@attire[1])) %>
-Bottom <br>
-<%= link_to(image_tag("shoes.jpg", :alt => "Shoes", :title => "Shoes", :class => 'thumb'), attires_by_type_path(@attire[4])) %>
-Shoes <br>
-<%= link_to(image_tag("hat.jpg", :alt => "Hats", :title => "Hats", :class => 'thumb'), attires_by_type_path(@attire[3])) %>
-Hats <br>
-<%= link_to(image_tag("accessories.jpg", :alt => "Accessories", :title => "Accessories", :class => 'thumb'), attires_by_type_path(@attire[0])) %>
-Accessories
+  <div class = "container">
+    <div class = "attire_new_text">
+      <div class ="row">
+        <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Dresses</h3>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Top</h3>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Bottom</h3>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Shoes</h3>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Hats</h3>
+        </div>
+          <div class="mx-auto col-md-2 col-sm-3 col-xs-3">
+          <h3>Accessories</h3>
+        </div>
+      </div>
+    </div>
+  </div>

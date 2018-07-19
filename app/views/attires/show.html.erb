@@ -1,15 +1,49 @@
-<h1><%= @attire.name.capitalize  %></h1>
+<div class="container">
+  <div class="wrapper">
+      <div>
+        <%= image_tag @attire.image, :alt => @attire.name, :class => 'feature'%>
+      </div>
+
+      <div class ="associate_img">
+          <p class = "thumb_text">
+            <h4>Associate Style </h4>
+            <%= link_to image_tag(@attire.style.image, :class =>'thumb2'), style_path(@attire.style.id) %>
+            <br>
+            <%= @attire.style.name %>
+          </p>
+    </div>
+
+    <div class = "nested">
+      <div>
+        <h1 class ="item_name"><%= @attire.name.capitalize  %></h1>
+      </div>
+
+      <div>
+          <ul>
+            <li><%= @attire.name %></li>
+            <li><%= @attire.style.style_type %></li>
+            <li>Description : <%= @attire.detail %></li>
+          </ul>
+      </div>
+
+      <div class ="all_size">
+        <a href="", class="size"> S </a>
+        <a href="", class="size"> M </a>
+        <a href="", class="size"> L </a>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-dark">
+          <a href="", class = "add_cart">Favorite List</a>
+        </button>
+
+        <button type="button" class="btn btn-dark">
+          <a href="", class = "add_cart">Add Cart</a>
+        </button>
+      </div>
+    </div>
+
+  </div>
 
 
-<%= image_tag @attire.image, :alt => @attire.name, :class => 'feature'%>
-
-<ul>
-  <li><%= @attire.name %></li>
-  <li><%= @attire.style.style_type %></li>
-  <li>Description : <%= @attire.detail %></li>
-
-</ul>
-
-
-    <%= link_to image_tag(@attire.style.image, :class =>'thumb'), style_path(@attire.style.id) %>
-    <%= @attire.style.name %>
+</div>

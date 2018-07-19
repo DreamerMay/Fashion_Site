@@ -7,38 +7,48 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      </head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Paytone+One|Varela+Round|Abril+Fatface|Chela+One|Lobster|Roboto|Montserrat|Raleway|Pacifico|Montserrat:300,400');
+      </style>
+  </head>
 
   <body>
 
     <nav class ="navbar navbar-dark bg-dark navbar-expand " >
-    <div class ="container">
+   <div class ="container">
+      <div class="text-center d-flex flex-row justify-content-around my-flex-container col-md-4 col-sm-4">
+       <%= link_to 'Home', root_path, :class => "nav_round"  %>
+         <% if @current_user.present? %>
+           <%= link_to 'Email Address', users_path if @current_user.admin? %>
+           <%= link_to "Sign out  #{@current_user.name }", login_path, :method => 'delete', :class => "nav_round"  %>
 
-        <%= link_to 'Home', root_path %>
-          <% if @current_user.present? %>
-            <%= link_to 'Email Address', users_path if @current_user.admin? %>
-            <%= link_to "Sign out  #{@current_user.name }", login_path, :method => 'delete' %>
+         <% else %>
+           <%= link_to 'Create', new_user_path, :class => "nav_round"  %>
+           <%= link_to 'Log In', login_path, :class => "nav_round"  %>
+         <% end %>
+      </div>
 
-          <% else %>
-            <%= link_to 'Create Account', new_user_path %>
-            <%= link_to 'Log In', login_path %>
-          <% end %>
+      <div class="text-center d-flex flex-row justify-content-around my-flex-container col-md-4 col-sm-4">
+         <%= image_tag 'Logo_long_white.png', :alt => "Chole logo", :class => 'home_logo' %>
+      </div>
 
-          <%= image_tag 'Logo_long_white.png', :alt => "Chole logo", :class => 'home_logo' %>
+      <div class="text-center d-flex flex-row justify-content-around my-flex-container col-md-4 col-sm-4">
+         <%= link_to 'Style', styles_new_path, :class => "nav_round"  %>
+         <%= link_to 'Attire', attires_new_path, :class => "nav_round"  %>
+         <%= link_to 'My List', fav_attire_path, :class => "nav_round" %>
+      </div>
+     </div>
+   </nav>
 
-          <%= link_to 'Style', styles_new_path %>
-          <%= link_to 'Attire', attires_new_path %>
+<div class ="container_footer">
+   <%= yield %>
+<div class ="container">
 
-          <%= link_to 'My Fashion', fav_style_path  %>
-          <%= link_to 'My List', fav_attire_path %>
 
-    </nav>
 
-    <%= yield %>
-    </div>
+   <footer class="fixed-bottom">
+      <p>Sherine.GA.course &copy; 2018  <p>
+   </footer>
+
   </body>
 </html>

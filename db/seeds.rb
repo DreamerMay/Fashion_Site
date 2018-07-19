@@ -44,7 +44,7 @@ a3 = Attire.create(
 :image => 'https://img1.theiconic.com.au/sAa3eg--b5RqkhvI6lGMlGcbNDo=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Ffriend-of-audrey-3906-813156-1.jpg')
 
 a4 = Attire.create(
-  :name =>'Sallie Ponte Pull-On Pants',
+  :name =>'Sallie Pull-On Pants',
   :attire_type => 'bottom',
   :style_type => 'sophisticated',
   :detail =>'Fight that winter morning chill with the help of Atmos&Here latest workwear apparel. The Sallie Ponte Pull-On Pants are the perfect, classic black, dress trousers to prepare you for a busy, on-the-go, work day.',
@@ -79,21 +79,21 @@ a8 = Attire.create(
   :image => 'https://img1.theiconic.com.au/R3B5aC0L70KOerjyP30kLIEQDog=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fassembly-6343-700894-1.jpg')
 
 a9 = Attire.create(
-  :name =>'Josiah Casual Longline Jacket',
+  :name =>'Josiah Longline Jacket',
   :attire_type => 'top',
   :style_type => 'casual',
   :detail =>'Reach your new season fashion goals with the latest from Atmos&Here. From must-have dresses to classic off-duty tees and denim you’ll never want to take off, look to the brand for on-trend pieces in the latest shapes, colours and prints to match any dress code.',
   :image => 'https://img1.theiconic.com.au/HihCykAB_pyEN1JPOdhUiWU27FQ=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fatmos-here-9085-892385-6.jpg')
 
 a10 = Attire.create(
-  :name =>'Kiani Sock Ankle Boots',
+  :name =>'Kiani Ankle Boots',
   :attire_type => 'shoe',
   :style_type => 'casual',
   :detail =>'Featuring an of-the-moment sock-style silhouette crafted from stretch Lycra, Spurrs Kiani Sock Ankle Boots are a stylish choice for the cooler months. With a rounded toe, a wrapped block heel and fitted cuffs, these boots work with everything from cropped denim to floaty midi hemlines.',
   :image => 'https://img1.theiconic.com.au/DCEULVDhP7dPsDTBj2VhasnOCe0=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fspurr-5756-943035-2.jpg')
 
 a11 = Attire.create(
-  :name =>'SS Roll Casual Shirt',
+  :name =>'Roll Casual Shirt',
   :attire_type => 'top',
   :style_type => 'vintage',
   :detail =>'For feminine flair, try British High-Street label Oasis. Drawing inspiration from travel, the S/S Roll Casual Shirt is a lightweight shirt, cut to a regular fit. Featuring a regular collar, this shirt includes rolled sleeves, patch pockets, a hidden button down front and comes in an attractive light blue shade.',
@@ -101,14 +101,14 @@ a11 = Attire.create(
 ')
 
 a12 = Attire.create(
-  :name =>'Cult Skinny Ankle Jeans',
+  :name =>'Skinny Ankle Jeans',
   :attire_type => 'bottom',
   :style_type => 'casual',
   :detail =>'Exude Parisian-inspired elegance in the awe-inspiring Amore Dress from Fresh Soul. The polka dot dress frames and flatters your figure with its off-the-shoulder design and ruffles overlays, reminiscent of glamorous icons from bygone vintage eras.',
   :image => 'https://img1.theiconic.com.au/MOfO9oAEtRSZyIag8WBFwH09HtI=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fnobody-dnm-4309-493206-1.jpg')
 
 a13 = Attire.create(
-  :name =>'Collette Off-Shoulder Midi Dress',
+  :name =>'Collette Midi Dress',
   :attire_type => 'dress',
   :style_type => 'sexy',
   :detail =>'The Collette Off-Shoulder Midi Dress by CALLI is a stunning, modern piece which is guaranteed to make heads turn. Featuring a fitted silhouette and side splits this piece is crafted to enhance your natural shape.This gorgeous dress is perfect for all formal occasions.',
@@ -136,14 +136,14 @@ a16 = Attire.create(
   :image => 'https://img1.theiconic.com.au/bUcMGwL03zayD0nUC5xqc7nAPDA=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fbillini-1520-964665-1.jpg')
 
   a17 = Attire.create(
-    :name =>'Mini Gold Coin Necklace',
+    :name =>'Gold Coin Necklace',
     :attire_type => 'accessories',
     :style_type => 'vintage',
     :detail =>'Inspired by precious pieces passed down by generations, Australian label Reliqua Jewellery derives its its name from the Spanish word for family heirloom. The delicate designs are crafted from quality metals and feature timeless designs you wont ever want to take off. The Mini Gold Coin Necklace features an 18ct gold filled pendant and dainty everyday chain.',
     :image => 'https://img1.theiconic.com.au/Y7TrVKCfckJz4NtcCR9IxdBVWk0=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Freliquia-jewellery-7378-563115-1.jpg')
 
   a18 = Attire.create(
-    :name =>'Mini Keshi Pearl Earrings',
+    :name =>'Keshi Pearl Earrings',
     :attire_type => 'accessories',
     :style_type => 'sophisticated',
     :detail =>'Cult jewellery designer Reliquia Jewellery plays with proportion in the Mini Keshi Pearl Earrings. This 18k gold-filled pair are adorned with genuine keshi pearls that offer a bright lustre.',
@@ -170,27 +170,27 @@ a16 = Attire.create(
     :detail =>'With a simple polka dot print all over and a lightweight crepe construction the Dorothy Polkadot Blouse by Forcast is perfect for updating your work wardrobe.',
     :image => 'https://img1.theiconic.com.au/nF3JL7JL-JYHa0jPoT_fvu6DVvc=/fit-in/1000x0/filters:fill(ffffff):quality(85):format(webp)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fforcast-7378-931544-1.jpg')
   a22 = Attire.create(
-    :name =>'Cameron Seasonless Stretch Pants',
+    :name =>'Cameron Stretch Pants',
     :attire_type => 'bottom',
     :style_type => 'sophisticated',
     :detail =>'The J.Crew Cameron Seasonless Stretch Pants feature a straightforward design that makes them perfect for all occasions. Match them with a plain shirt and some pointed pumps for an outfit that will take you from the office to an evening out effortlessly.',
     :image => 'https://img1.theiconic.com.au/sJWB6daD6NAk9i-p0VAd4269sNs=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fj-crew-0881-582106-1.jpg')
 
   a23 = Attire.create(
-    :name =>'Crepe Floral Gathered Front Top',
+    :name =>'Crepe Floral Top',
     :attire_type => 'top',
     :style_type => 'casual',
     :detail =>'Bold and straight-talking, UK fashion brand Missguided takes on global influences of street style and popular culture to deliver a confident collection of figure-hugging bodycon dresses, streetwear-inspired tracksuits and tongue-in-cheek slogan tees to equip millennial women with the power of fashion. Offering the latest catwalk trends at prices you can afford, Missguided will reinvent your party wardrobe so you can unleash your best self at next weekend’s hottest event.',
     :image => 'https://img1.theiconic.com.au/Y3Su9o71mlluK59u2AeknLGxYPw=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fmissguided-9712-555416-1.jpg')
   a24 = Attire.create(
-    :name =>'Louise Super Slim Pants',
+    :name =>'Super Slim Pants',
     :attire_type => 'bottom',
     :style_type => 'casual',
     :detail =>'Add a dose of glamour to your desk-to-dinner wardrobe with Forcast’s latest collection of dresses and separates. Beautifully-crafted, their wearable on-trend pieces will take your look to a whole new level of effortless sophistication. The Louise Super Slim Pants boast an ultra close and stretchy fit, and are complete with a classic five pocket design, belt-looped waistband and zip fly with button closure. The black hue makes them the perfect choice for workwear and beyond.',
     :image => 'https://img1.theiconic.com.au/k_qBgYwcgq4mn0Om30T4M4mpbTU=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fforcast-2933-987311-1.jpg')
 
   a25 = Attire.create(
-    :name =>'Strapless Evening Dress with Split',
+    :name =>'Strapless Evening Dress',
     :attire_type => 'dress',
     :style_type => 'sexy',
     :detail =>'Choose Australian fashion label SKIVA for designs that are classic, sharp and effortless. With an eye for the finest details and sourcing only the best fabrics, trims and accessories from markets around the world, a SKIVA dress is sure to have all eyes on you.',
@@ -228,7 +228,7 @@ a16 = Attire.create(
     :detail =>'Australian-based label Ace of Something draws inspiration from local and global realms to create contemporary hats and headwear with a timeless sensibility. Nestled in the heart of fashion hub Melbourne, Ace of Something designs for the modern woman who favours style and quality in equal measure.',
     :image => 'https://img1.theiconic.com.au/vuwnQxuNNbEgcMDIXTwdneHUdio=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Face-of-something-9579-834826-1.jpg')
   a31 = Attire.create(
-    :name =>'Winter Felt Designer Hat',
+    :name =>'Winter Felt Hat',
     :attire_type => 'hat',
     :style_type => 'vintage',
     :detail =>'For bespoke millinery at an accessible price, look no further than homegrown headwear label Max Alexander. Launched in 1963, Max Alexander has developed a signature aesthetic that has quickly become synonymous with the effortless glamour of Australian racewear. Every collection is designed with exceptional quality and an eye for detail from every angle. The result? A covetable selection of seasonal racing and cocktail hats that strike the perfect balance between classic handmade craftsmanship and contemporary-led design.',

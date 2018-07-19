@@ -1,7 +1,21 @@
-<h1> <%= params[:style].capitalize %> Fashion Style </h1>
 
-<% @style.each do |style| %>
-<%# image_tag style.image, :alt => style.style_type, :class => 'thumb' if style.image.present? %>
-<%= style.name %>
-<%= link_to image_tag(style.image, :class => 'thumb'), style_path(style) %>
-<% end %>
+<div class="container">
+
+  <div class="title">
+    <h1> <%= params[:style].capitalize %> Fashion Style </h1>
+  </div>
+
+  <div class=“container”>
+      <div class ="grid_container">
+        <% @style.each do |style| %>
+
+        <p class ="box">
+          <%= link_to image_tag(style.image, :class => 'thumb'), style_path(style) %>
+          <%= style.name %>
+        </p>
+
+        <% end %>
+
+        </div>
+  </div>
+</div>

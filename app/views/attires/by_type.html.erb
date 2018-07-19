@@ -1,13 +1,19 @@
-<h1><%= params[:attire].capitalize %></h1>
 
-<%# @attire.each do |attire| %>
-<%# image_tag attire.image, :alt => attire.attire_type, :class => 'thumb' if attire.image.present? %>
+<div class="container">
+  <div class="title">
+    <h1><%= params[:attire].capitalize %></h1>
+  </div>
 
-<% @attire.each do |attire| %>
-<%= link_to image_tag(attire.image, :class => 'thumb'), attire_path(attire)  %>
+  <div class=“container”>
+      <div class ="grid_container">
+      <% @attire.each do |attire| %>
 
-<%= attire.name %>
+      <p class ="box">  
+          <%= link_to image_tag(attire.image, :class => 'thumb'), attire_path(attire)  %>
+          <%= attire.name%>
+      </p>
+          <% end %>
 
-<% end %>
-
-<br>
+      </div>
+  </div>
+</div>

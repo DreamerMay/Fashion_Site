@@ -1,20 +1,39 @@
-<h1>Fahsion Style</h1>
+<div class = "container">
+<div class="title">
+  <h1>Fahsion Style</h1>
+</div>
 
-
-<br>
-  <div class = "fashion_type">
-  <%= link_to(image_tag("casual.jpg", :alt => "casual", :title => "Casual", :class => 'feature'), styles_by_type_path(@style[0])) %> <br>
-  Casual Style <br>
-  <%= link_to(image_tag("sophisticated.jpg", :alt => "sophisticated", :title => "Sophisticated", :class => 'feature'), styles_by_type_path(@style[2])) %> <br>
-  Sophisticated Style <br>
-  <%= link_to(image_tag("vintage.jpg", :alt => "vintage", :title => "Vintage", :class => 'feature'), styles_by_type_path(@style[3])) %> <br>
-  Vintage Style <br>
-  <%= link_to(image_tag("sexy.jpg", :alt => "sexy", :title => "Sexy", :class => 'feature'), styles_by_type_path(@style[1])) %> <br>
-  Sexy Style <br>
-
-  <%= link_to @style[0].capitalize, styles_by_type_path(@style[0]) %> Fashion<br>
-  <%= link_to @style[1].capitalize, styles_by_type_path(@style[1]) %> Fashion<br>
-  <%= link_to @style[2].capitalize, styles_by_type_path(@style[2]) %> Fashion<br>
-  <%= link_to @style[3].capitalize, styles_by_type_path(@style[3]) %> Fashion<br>
-
+  <div class = "container">
+    <div class = "fashion_type">
+      <div class ="row">
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <%= link_to(image_tag("casual.png", :alt => "casual", :title => "Casual", :class => 'feature'), styles_by_type_path(@style[0])) %>
+        </div>
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <%= link_to(image_tag("sophisticated.png", :alt => "sophisticated", :title => "Sophisticated", :class => 'feature'), styles_by_type_path(@style[2])) %>
+        </div>
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <%= link_to(image_tag("vintage.png", :alt => "vintage", :title => "Vintage", :class => 'feature'), styles_by_type_path(@style[3])) %>
+        </div>
+         <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <%= link_to(image_tag("sexy.png", :alt => "sexy", :title => "Sexy", :class => 'feature'), styles_by_type_path(@style[1])) %>
+        </div>
+      </div>
+      <div class ="row">
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <h3>Casual Style </h3>
+        </div>
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <h3>Sophisticated Style </h3>
+        </div>
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <h3>Vintage Style </h3>
+        </div>
+        <div class="mx-auto col-md-3 col-sm-3 col-xs-3">
+        <h3>Sexy Style </h3>
+        </div>
+      </div>
+    </div>
   </div>
+
+</div>

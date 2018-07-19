@@ -1,4 +1,7 @@
-<h1>ALL Users: <%= number_to_human User.count %></h1>
+<div class="title">
+  <h1>ALL Users: <%= number_to_human User.count %></h1>
+</div>
+  
 <% @user.each do |user| %>
   <p><%= user.name %>
   </br>

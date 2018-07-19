@@ -1,23 +1,36 @@
-<h1><%= @style.name.capitalize  %></h1>
+<div class="title">
+  <h1><%= @style.name.capitalize  %></h1>
+</div>
+<div class="container">
+  <div class="wrapper2">
+        <div>
+            <%= image_tag @style.image, :alt => @style.name, :class => 'feature' if @style.image.present?%>
+            <h5>Associate Style: <%= @style.style_type.capitalize %> </h5>
+        </div>
 
-<%= image_tag @style.image, :alt => @style.name, :class => 'feature' if @style.image.present?%>
+        <div class ="associate_img_style">
+            <h3>Associate Attire</h3>
+            <% @style.attires.each do |attire| %>
+              <%= link_to image_tag(attire.image, :class =>'thumb3'), attire %>
+              <br>
+              <%= attire.name %>
+              <br>
+              <p></p>
+            <% end %>
 
-<ul>
-  <li><%= @style.name %></li>
-  <li><%= @style.style_type %></li>
-</ul>
+        </div>
 
-<hr>
+        <div class ="associate_img_style">
+            <h3>You may like</h3>
+            <% @style_random.each do |random| %>
+              <% next if random == @style %>
+              <%= link_to image_tag(random.image, :class => 'thumb3'), random %>
+              <br>
+              <%= random.name %>
+              <br>
+              <p></p>
+            <% end %>
 
-<% @style.attires.each do |attire| %>
-  <%= link_to image_tag(attire.image, :class =>'thumb'), attire %>
-  <%= attire.name %>
-<% end %>
-
-<hr>
-<h3>You may like</h3>
-<% @style_random.each do |random| %>
-  <% next if random == @style %>
-  <%= link_to image_tag(random.image, :class => 'thumb'), random %>
-  <%= random.name %>
-<% end %>
+        </div>
+  </div>
+</div>
