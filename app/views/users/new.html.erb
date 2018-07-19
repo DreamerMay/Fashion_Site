@@ -1,32 +1,52 @@
-<div class="title">
-  <h1>Create New Account</h1>
+<div class="container">
+
+  <div class="title">
+    <h1>Create New Account</h1>
+  </div>
+
+  <% if @user.errors.any? %>
+    <ol>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ol>
+  <% end %>
+  <div class ="container">
+    <div class ="wrapper3">
+      <div class="form">
+        <%= form_for(@user, :html => { :multipart => true }) do |f| %>
+
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <p></p>
+          <br>
+
+            <%= f.label :email %>
+            <%= f.email_field :email %>
+            <p></p>
+          <br>
+
+            <%= f.label :image %>
+            <%= f.file_field :image %>
+
+        </div>
+
+        <div class="form">
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+            <p></p>
+          <br>
+
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation %>
+            <p></p>
+          <br>
+
+            <%= f.submit "Create!" %>
+        </div>
+          <% end %>
+
+    </div>
+  </div>
+
 </div>
-
-<% if @user.errors.any? %>
-  <ol>
-    <% @user.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ol>
-<% end %>
-
-<%= form_for(@user, :html => { :multipart => true }) do |f| %>
-
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-<br>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-<br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-<br>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-<br>
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-<br>
-  <%= f.submit "Create!" %>
-
-<% end %>

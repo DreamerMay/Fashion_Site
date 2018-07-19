@@ -37,6 +37,17 @@ nav {
   border-radius: 50%;
   }
 
+p.nav_round_user {
+
+  color: #333333 !important;
+  width: 70px !important;
+  height: 70px;
+  padding: 25px 0;
+  padding-top: 1em;
+  background-color: pink !important;
+  border-radius: 50%;
+}
+
   a.nav_round:hover {
     text-decoration: none !important;
     color: black !important;
@@ -73,15 +84,19 @@ img.home_content_logo {
   display: block;
 }
 
+h2 {
+  text-align: center;
+}
 
 .user {
   max-height: 15em;
-  border: 5px solid white;
+  border: 5px solid $brand_green;
   border-radius: 50%;
+  margin-left: 1.3em;
 }
 
 .home_img_content {
-  padding-top: 10em;
+  padding-top: 5em;
   display: inline-flex;
   align-items: center;
 }
@@ -102,6 +117,11 @@ img.home_content_logo {
 
 .feature {
   max-height: 30em;
+}
+
+.feature2 {
+  max-height: 30em;
+  padding-top: 2em;
 }
 
 img.feature:hover {
@@ -196,6 +216,23 @@ button:hover {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
   grid-column-gap: 3em;
+}
+
+.wrapper3 {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-column-gap: 3em;
+  margin-top: 8em;
+  padding: 2em;
+  border: 2px solid;
+  border-color: $brand_green;
+  border-radius: 5px;
+  background-color: $brand_green;
+
+}
+
+label {
+  min-width: 170px;
 
 }
 
@@ -236,4 +273,15 @@ ul {
 
 .size {
   margin-right: 2.8em;
+}
+.form {
+  font-family: 'Montserrat300', sans-serif;
+}
+
+div.form {
+  text-align: center;
+}
+.errors {
+  color: red;
+  font-family: 'Montserrat', sans-serif;
 }

@@ -1,30 +1,32 @@
-<div class="title">
-  <h1>Log In</h1>
-</div>
-<h2><%= flash[:error] %></h2>
+<div class="container">
 
-<%= form_tag login_path do %>
-  <%= label_tag :email %>
-  <%= email_field_tag :email %>
-<br>
+  <div class="title">
+      <h1>Log In</h1>
+      <h2 class="errors"><%= flash[:error] %></h2>
+  </div>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
+    <div class ="wrapper3">
+      <div class="form">
+      <%= form_tag login_path do %>
+        <%= label_tag :email %>
+        <%= email_field_tag :email %>
+        <p></p>
+      <br>
 
-<br>
-  <%= submit_tag "Log In" %>
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
 
-</br>
+      <br>
+        <%= submit_tag "Log In" %>
+      </div>
 
-<h2>New Member?</h2>
+    <div class = "form">
+      <h2>New Member?</h2>
+      <p>Create your account with just 3 simple inputs </p>
+      <% end %>
 
-<p>Create your account with just 3 simple inputs </p>
-
-
-
-<% end %>
-
-<div class = "controls">
-  <%= button_to 'Create New Account', new_user_path, :method => 'get', :class => "btn btn-primary", form: {style: 'display:inline-block;'} %>
+        <%= button_to 'Create New Account', new_user_path, :method => 'get', :class => "btn btn-dark", form: {style: 'display:inline-block;'} %>
+    </div>
 
   </div>
+</div>

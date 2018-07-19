@@ -1,30 +1,46 @@
 <div class="container">
   <div class="wrapper">
-      <div>
-        <%= image_tag @attire.image, :alt => @attire.name, :class => 'feature'%>
+      <div class ="show_img">
+        <%= image_tag @attire.image, :alt => @attire.name, :class => 'feature2'%>
       </div>
 
       <div class ="associate_img">
           <p class = "thumb_text">
             <h4>Associate Style </h4>
-            <%= link_to image_tag(@attire.style.image, :class =>'thumb2'), style_path(@attire.style.id) %>
+            <% if @attire.style.present? %>
+            <%= link_to image_tag(@attire.style.image, :class =>'thumb2'), style_path(@attire.style.id)  %>
             <br>
-            <%= @attire.style.name %>
+
+            <%= @attire.style.style_type.capitalize %>
+            <% end %>
           </p>
     </div>
 
     <div class = "nested">
-      <div>
-        <h1 class ="item_name"><%= @attire.name.capitalize  %></h1>
-      </div>
+      <% if @attire.style.present? %>
+        <div>
+          <h1 class ="item_name"><%= @attire.name.capitalize  %></h1>
+        </div>
 
+        <div>
+            <ul>
+              <li><%= @attire.name %></li>
+              <li><%= @attire.style.style_type %></li>
+              <li>Description : <%= @attire.detail %></li>
+            </ul>
+        </div>
+      <% else %>
       <div>
-          <ul>
-            <li><%= @attire.name %></li>
-            <li><%= @attire.style.style_type %></li>
-            <li>Description : <%= @attire.detail %></li>
-          </ul>
+        <h1> Not available</h1>
       </div>
+      <div>
+        <h4> Not available</h4>
+      </div>
+      <!-- <div>
+        <h4> Not available</h4>
+      </div> -->
+
+      <% end %>
 
       <div class ="all_size">
         <a href="", class="size"> S </a>
