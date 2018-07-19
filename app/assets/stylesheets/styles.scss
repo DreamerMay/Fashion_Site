@@ -321,3 +321,26 @@ padding-bottom: 1em;
 padding-left: 2.5em;
 padding-right: 2.5em;
 }
+
+.overlay:hover {
+  background: rgba(0,0,0,1);
+  text-decoration: none;
+  color: white;
+
+}
+
+.overlay1:hover {
+  background: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: $brand_green !important;
+  text-decoration: none !important;
+}
