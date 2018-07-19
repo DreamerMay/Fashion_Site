@@ -24,11 +24,11 @@
             <h3>You may like</h3>
             <% @style_random.each do |random| %>
               <% next if random == @style %>
-              <%= link_to image_tag(random.image, :class => 'thumb3'), random %>
-              <br>
-              <%= random.name %>
-              <br>
-              <p></p>
+                <%= link_to image_tag(random.image, :class => 'thumb3'), random %>
+                <br>
+                <%= random.name %>
+                <br>
+                <p></p>
             <% end %>
 
         </div>

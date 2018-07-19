@@ -243,10 +243,13 @@ button:hover {
   border-color: $brand_green;
   border-radius: 5px;
   background-color: $brand_green;
-
 }
 
-
+.nested {
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr 1fr;
+  padding: 1em;
+}
 
 label {
   min-width: 170px;
@@ -283,12 +286,7 @@ h5 {
   margin-top: 1em;
 }
 
-.nested {
-  display: grid;
-  grid-template-rows: 2fr 4fr 1fr 1fr;
-  padding: 1em;
 
-}
 
 ul {
   padding: 0
