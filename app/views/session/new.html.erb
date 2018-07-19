@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div class="title">
+  <div class="title_home">
       <h1>Log In</h1>
       <h2 class="errors"><%= flash[:error] %></h2>
   </div>
@@ -17,12 +17,13 @@
         <%= password_field_tag :password %>
 
       <br>
-        <%= submit_tag "Log In" %>
+      <p></p>
+        <%= submit_tag "Log In", class: "btn btn-dark" %>
       </div>
 
     <div class = "form">
       <h2>New Member?</h2>
-      <p>Create your account with just 3 simple inputs </p>
+      <p class="new_member">Create your account with just 3 simple inputs </p>
       <% end %>
 
         <%= button_to 'Create New Account', new_user_path, :method => 'get', :class => "btn btn-dark", form: {style: 'display:inline-block;'} %>

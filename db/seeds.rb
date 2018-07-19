@@ -1,7 +1,8 @@
 
 User.destroy_all
-u1 = User.create :name => 'Sarah Johnson', :email => 'sarah.j@ga.co', :image => 'https://regenesys.net/admin_theme/assets/admin/pages/media/profile/photo3.jpg', :password => 'chicken', :admin => true
-u2 = User.create :name => 'Chloe Navarro', :email => 'chloe.n@ga.co', :image => 'https://cdn.bigpictureclasses.com/user/profiles/avatars/000/000/074/large_2x/user_profile_pic.jpg', :password => 'chicken'
+u1 = User.create :name => 'Sarah Johnson', :email => 'sarah@ga.co', :image => 'https://regenesys.net/admin_theme/assets/admin/pages/media/profile/photo3.jpg', :password => 'chicken', :admin => true
+u2 = User.create :name => 'Chloe Navarro', :email => 'chloe@ga.co', :image => 'https://i.imgur.com/jFtLUrp.png', :password => 'chicken'
+u3 = User.create :name => 'Joanne Ryan', :email => 'joanne@ga.co', :image => 'https://cdn.bigpictureclasses.com/user/profiles/avatars/000/000/074/large_2x/user_profile_pic.jpg', :password => 'chicken'
 
 Style.destroy_all
 s1 = Style.create :name => 'Draped Contras', :style_type => 'sophisticated', :image => 'https://img1.theiconic.com.au/2UPHyTn-XRv-5-wBckUFCZtPfs0=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fcloset-london-5176-334606-1.jpg'

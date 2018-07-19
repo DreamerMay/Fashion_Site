@@ -93,6 +93,8 @@ h2 {
   border: 5px solid $brand_green;
   border-radius: 50%;
   margin-left: 1.3em;
+  width: 250px;
+  height: 250px;
 }
 
 .home_img_content {
@@ -122,6 +124,7 @@ h2 {
 .feature2 {
   max-height: 30em;
   padding-top: 2em;
+
 }
 
 img.feature:hover {
@@ -136,7 +139,7 @@ img.feature:hover {
 .title, h3 {
   font-family: 'Pacifico', sans-serif;
   text-align: center;
-  padding-left: 1em;
+
 }
 
 
@@ -170,6 +173,7 @@ img.feature:hover {
 
 .thumb2 {
   max-height: 10em;
+  border: 5px solid black;
 }
 
 li {
@@ -222,14 +226,19 @@ button:hover {
   display: grid;
   grid-template-columns: 4fr 4fr;
   grid-column-gap: 3em;
-  margin-top: 8em;
+  margin-top: 5em;
   padding: 2em;
+  padding-top: 2em;
   border: 2px solid;
+  width: 57em;
+  height: 20em;
   border-color: $brand_green;
   border-radius: 5px;
   background-color: $brand_green;
 
 }
+
+
 
 label {
   min-width: 170px;
@@ -260,6 +269,12 @@ h5 {
   max-height: 13em;
 }
 
+.thumb4 {
+  max-height: 10em;
+  border: 5px solid black;
+  margin-top: 1em;
+}
+
 .nested {
   display: grid;
   grid-template-rows: 2fr 4fr 1fr 1fr;
@@ -280,6 +295,7 @@ ul {
 
 div.form {
   text-align: center;
+  padding-top: 3.5em;
 }
 .errors {
   color: red;
@@ -343,4 +359,23 @@ a{
 a:hover {
   color: $brand_green !important;
   text-decoration: none !important;
+}
+
+.title_home {
+  text-align: center;
+  margin-top: 3em;
+}
+
+input#password, input#email, input#name, input#image, input#password_confirmation{
+  min-width: 220px;
+}
+
+label {
+  text-align: left;
+  padding-left: 2em;
+  min-width: 150px;
+}
+
+p.new_member {
+  padding-bottom: 2.7em;
 }
