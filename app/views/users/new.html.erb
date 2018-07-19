@@ -16,7 +16,7 @@
       <div class="form">
         <%= form_for(@user, :html => { :multipart => true }) do |f| %>
 
-            <%= f.label :name %>
+            <%= f.label :name, :class =>"test" %>
             <%= f.text_field :name %>
             <p></p>
           <br>

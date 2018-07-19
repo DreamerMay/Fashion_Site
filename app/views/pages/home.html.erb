@@ -4,6 +4,9 @@
       <div class="home_img_content">
         <div class="mx-auto col-md-4 col-sm-4 col-xs-4">
           <%= link_to(image_tag("style_home3.jpg", :alt => "Fashion Style", :title => "Fashion Style", :class => 'home_img', :id => 'home_img1'), new_style_path )%>
+          <div class="overlay">
+            <span id="text">Fashion Style</span>
+          </div>
         </div>
 
         <div class="mx-auto col-md-4 col-sm-4 col-xs-4">
@@ -12,6 +15,7 @@
             <h2>Welcome back</h2>
             <div>
               <%= image_tag @current_user.image, :alt => @current_user.name, :class => "user" if @current_user.image.present?%>
+
             </div>
               <h2><%= @current_user.name %></h2>
             <% else %>
@@ -21,7 +25,10 @@
           </div>
         </div>
         <div class="mx-auto col-md-4 col-sm-4 col-xs-4">
-          <%= link_to(image_tag("attire_home1.png", :alt => "Clothing", :title => "Clothing", :class => 'home_img'), new_attire_path )%>
+          <%= link_to(image_tag("Aatire_range.png", :alt => "Clothing", :title => "Clothing", :class => 'home_img'), new_attire_path )%>
+          <div class="overlay1">
+            <span id="text"> Attire Range </span>
+          </div>
         </div>
 
     </div>
