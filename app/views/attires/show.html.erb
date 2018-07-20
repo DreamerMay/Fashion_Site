@@ -10,7 +10,6 @@
             <% if @attire.style.present? %>
             <%= link_to image_tag(@attire.style.image, :class =>'thumb2'), style_path(@attire.style.id)  %>
             <br>
-
             <%= @attire.style.style_type.capitalize %>
             <% end %>
           </p>
@@ -21,7 +20,6 @@
         <div>
           <h1 class ="item_name"><%= @attire.name.capitalize  %></h1>
         </div>
-
         <div>
             <ul>
               <li>Style: <%= @attire.style.style_type %></li>
@@ -36,10 +34,6 @@
       <div>
         <h4> Not available</h4>
       </div>
-      <!-- <div>
-        <h4> Not available</h4>
-      </div> -->
-
       <% end %>
 
       <div class ="all_size">

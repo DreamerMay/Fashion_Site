@@ -1,49 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project Title: Chloe - Fashion You Love
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Items need to fix:
-1) Stripe javascript => payment
-2) new create user image not display
-3) login user history not show.
+Web page that categorised Fashion Style type so user able to shop based on their fashion taste than scrolling 100s dress to find specific taste they like. User able to check out their specific fashion style type and check suggestion attire from there. It also links to all of the outfit of model is wearing so user are able to purchase what they see on the model.
 
 
-random pic codes pending to time
-<% @style_clothes.each do |style_cloth| %>
-<%= link_to image_tag(style_cloth.image, :class => 'thumb').sample(3), style_cloth %>
-<%end %>
+Deployment : https://hidden-springs-69116.herokuapp.com/
+Available github code : https://github.com/DreamerMay/project1
 
-cloudinary add in _form.html files (may need if admin want to add picture in)
-<div class="field">
-   <%= f.label :link %><br>
-   <%= f.file_field :link %>
- </div>
+System using:
+* ruby version 2.5.1
+* rails version 5.2.0
+* bootstrap version 4.1.1
+* cloudinary
+* bcrypt version 3.1.7
 
-Next, we need to change the form header: <%= form_for(image, :html => { :multipart => true }) do |form| %>
+Databse :
+* postgresql
+* basics data in db/seeds.rb
 
-link:text if importiant for the link/ form.file_file => need for connect to the link
+Author: Sherine Foo - Initial Work : https://github.com/DreamerMay
 
-That's it for forms, the next, got to the index page and modify <td><%= image.link %></td> to be an image tag, like so: <td><%= image_tag image.link %></td>.
 
-refer to this: https://johnofsydney.gitbooks.io/wdi-28/modules/cloudinary.html
+Expansion :
+* Add Favorite list
+* Add cart list and Payment methods (using Stripe with JavaScript)
+* Add more pictures for front, side and back views of each attire.
+* Edit user profile and add geo location where the user is from for estimation standard shipping cost ready to calculate.
+
+Review of project:
+I wanted to solve my own shopping pain point while shop online, but I get why online fashion store does not do this feature as it needs to manage complete database and every new item they add, categorised by proper fashion expert.
+
+
+
+Perso requirement:
+* The problem
+* Demo (Heroku)
+* Routes/Models/Schema
+* Sore Bits - Spend too much time in CSS, where I would prefer to spend more time using Ruby and rails
+* Cool Beans - Learn more about css which I don't understand previously.
+* What's next?
