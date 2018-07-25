@@ -1,0 +1,23 @@
+<div class ="container">
+  <div class="title">
+    <h1>My Favorite Attire List</h1>
+  </div>
+
+  <div class=“container”>
+      <div class ="grid_container">
+        <% @fav_attire.each do |f_attire| %>
+
+        <p class ="box">
+          <%= link_to image_tag(f_attire.image, :class => 'thumb'), attire_path(style) %>
+          <%= f_attire.name %>
+        </p>
+
+        <% end %>
+
+        </div>
+  </div>
+
+
+
+
+</div>

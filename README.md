@@ -21,12 +21,12 @@ Databse :
 
 Author: Sherine Foo - Initial Work : https://github.com/DreamerMay
 
-
 Expansion :
 * Add Favorite list
 * Add cart list and Payment methods (using Stripe with JavaScript)
 * Add more pictures for front, side and back views of each attire.
 * Edit user profile and add geo location where the user is from for estimation standard shipping cost ready to calculate.
+* add in email for order status
 
 Review of project:
 I wanted to solve my own shopping pain point while shop online, but I get why online fashion store does not do this feature as it needs to manage complete database and every new item they add, categorised by proper fashion expert.
@@ -40,3 +40,17 @@ Perso requirement:
 * Sore Bits - Spend too much time in CSS, where I would prefer to spend more time using Ruby and rails
 * Cool Beans - Learn more about css which I don't understand previously.
 * What's next?
+
+
+pending:
+user_controller
+def create_fav_attire
+  @fav_attire = Array.new
+  @attire = Attire.find params[:id]
+  @fav_attire = @fav_attire.push(@attire)
+end
+
+def fav_attire
+  @fav_attire = Style.where(:style_type => params[:style])
+
+end

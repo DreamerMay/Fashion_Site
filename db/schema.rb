@@ -5,7 +5,7 @@ ActiveRecord::Schema.define(version: 2018_07_16_083817) do
 
   create_table "attires", force: :cascade do |t|
     t.text "name"
-    t.integer "attire_type"
+    t.integer "attire_type" 
     t.integer "style_type"
     t.text "detail"
     t.text "image"

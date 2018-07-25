@@ -23,7 +23,7 @@
           <p class = "nav_round_user" >
            <%= @current_user.name%>
           </p>
-           <%= link_to "Sign out", login_path, :method => 'delete', :class => "nav_round"  %>
+           <%= link_to "Sign out", destroy_path(@current_user.id), :method => 'delete', :class => "nav_round"  %>
 
          <% else %>
            <%= link_to 'Create', new_user_path, :class => "nav_round"  %>
@@ -36,9 +36,9 @@
       </div>
 
       <div class="text-center d-flex flex-row justify-content-around my-flex-container col-md-4 col-sm-4">
-         <%= link_to 'Style', styles_new_path, :class => "nav_round"  %>
-         <%= link_to 'Attire', attires_new_path, :class => "nav_round"  %>
-         <%= link_to 'My List', fav_attire_path, :class => "nav_round" %>
+         <%= link_to 'Style', new_style_path, :class => "nav_round"  %>
+         <%= link_to 'Attire', new_attire_path, :class => "nav_round"  %>
+         <%= link_to 'My List', fav_attires_path(@current_user), :class => "nav_round" %>
       </div>
      </div>
    </nav>
@@ -50,7 +50,7 @@
 
 
    <footer class="fixed-bottom">
-      <p>Sherine.GA.course &copy; 2018  <p>
+      <p>Sherine.GA.WDI28 &copy; 2018  <p>
    </footer>
 
   </body>

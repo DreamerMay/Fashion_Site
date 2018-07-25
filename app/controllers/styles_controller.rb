@@ -7,6 +7,7 @@ class StylesController < ApplicationController
 
   def by_type
     @style = Style.where(:style_type => params[:style])
+
   end
 
   def show
