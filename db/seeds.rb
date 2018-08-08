@@ -248,7 +248,7 @@ s8.attires << a15 << a16
 s9.attires << a21 << a22
 s10.attires << a23 << a24
 s11.attires << a25 << a26
-s12.attires << a27 << a28
+
 
 
 
